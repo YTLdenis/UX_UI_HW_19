@@ -1,0 +1,379 @@
+/*  font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #576F72;
+}
+
+section {
+    padding: 0px 88px 64px;
+}
+
+
+/* Navigation Bar */
+
+.nav-item {
+    padding: 0 24px;
+}
+
+li, a, button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #7D9D9C;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 88px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 4px 0;
+    z-index: 3;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    transition: all ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #EFB448;
+}
+
+.logo {
+    max-width: 80px;
+    vertical-align: middle;
+}
+
+
+
+/* About Me */
+
+.aboutMe {
+    padding: 178px 0px 0px 0px;
+}
+
+.heroImg {
+    max-height: 766px;
+    float: left;
+    margin-right: 70px;
+}
+
+.aboutMeContainer {
+    height: 766px;
+    background-color: #576F72;
+    padding: 100px 80px;
+
+}
+
+.aboutMeText {
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #576F72;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: 24px;
+}
+
+.aboutMeIntro {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    background-color: #576F72;
+    color: #fff;
+}
+
+
+
+
+/* Skills */
+
+.hardSkillsHeader {
+    padding: 48px 0px 48px 0px;
+}
+
+.softSkillsHeader {
+    padding: 48px 0px 48px 0px;
+}
+
+.mySkillsContainer {
+    height: 550px;
+    padding: 0px 164px 180px 164px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 4px;
+}
+
+.hardSkillsContainer {
+    float: left;
+}
+
+.softSkillsContainer {
+    float: right;
+}
+
+div.info {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.skillsBar {
+    width: 300px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba (0,0,0,0.2);
+}
+
+.skillsBar .bar {
+    margin: 16px 0;
+}
+
+.skillsBar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skillsBar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skillsBar .bar .info span {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+.skillsBar .bar .progressLine {
+    position: relative;
+    height: 16px;
+    width: 100%;
+    background: #F0EBE3;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progressLine span {
+    height: 100%;
+    width: 80%;
+    background-color: #576F72;
+    position: absolute;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.progressLine.userResearch span {
+    width: 90%;
+}
+
+.progressLine.figma span {
+    width: 95%;
+}
+
+.progressLine.adobe span {
+    width: 45%;
+}
+
+.progressLine.HTML span {
+    width: 75%;
+}
+
+.progressLine.CSS span {
+    width: 75%;
+}
+
+.progressLine.javaScript span {
+    width: 50%;
+}
+
+
+.progressLine.teamPlayer span {
+    width: 80%;
+}
+
+.progressLine.communication span {
+    width: 75%;
+}
+
+.progressLine.problemSolving span {
+    width: 91%;
+}
+
+.progressLine.creativity span {
+    width: 93%;
+}
+
+.progressLine.presentation span {
+    width: 70%;
+}
+
+.progressLine.dogOwner span {
+    width: 100%;
+}
+
+.bar .progressLine span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #576F72;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.bar .progressLine span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    background: #576F72;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+.progressLine.userResearch span::after {
+    content: "90%";
+}
+
+.progressLine.figma span::after {
+    content: "95%";
+}
+
+.progressLine.adobe span::after {
+    content: "45%";
+}
+
+.progressLine.HTML span::after {
+    content: "75%";
+}
+
+.progressLine.CSS span::after {
+    content: "75%";
+}
+
+.progressLine.javaScript span::after {
+    content: "50%";
+}
+
+.progressLine.teamPlayer span::after {
+    content: "80%";
+}
+
+.progressLine.communication span::after {
+    content: "75%";
+}
+
+.progressLine.problemSolving span::after {
+    content: "91%";
+}
+
+.progressLine.creativity span::after {
+    content: "93%";
+}
+
+.progressLine.presentation span::after {
+    content: "70%";
+}
+
+.progressLine.dogOwner span::after {
+    content: "100%";
+}
+
+
+
+/* My Work */
+
+.myWorkHeader {
+    text-align: center;
+    padding: 0px 0px 48px 0px;
+    font-size: 24px;
+}
+
+.myWorkWeb-image {
+    height: 400px;
+    padding: 48px 0px 48px 0px;
+}
+
+.myWorkMobile-image {
+    height: 500px;
+    padding: 48px 0px 48px 0px;
+}
+
+.webImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item {
+    padding: 0 10%;
+}
+
+.carousel-control-prev {
+    background-color: #576F72;
+    width: 8%;
+}
+
+.carousel-control-next {
+    background-color: #576F72;
+    width: 8%;
+}
+
+em {
+    display: flex;
+    justify-content: space-around;
+}
