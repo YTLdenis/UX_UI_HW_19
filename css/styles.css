@@ -6,7 +6,6 @@ font-family: 'Raleway', sans-serif; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #fff;
 }
 
 h1 {
@@ -26,42 +25,17 @@ section {
     padding: 0 24px;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    list-style-type: none;
-    text-decoration: none;
     color: #7D9D9C;
-    display: inline-block;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 88px;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 0 4px 0;
-    z-index: 3;
-}
-
-a {
-    transition: all 0.3s ease 0s;
-}
-
-a:hover {
-    transition: all ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: #EFB448;
 }
 
 .logo {
     max-width: 80px;
-    vertical-align: middle;
 }
 
 
@@ -139,9 +113,9 @@ div.info {
 }
 
 .skillsBar {
-    width: 300px;
+    width: 475px;
     background: #fff;
-    box-shadow: 5px 5px 10px rgba (0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.2);
 }
 
 .skillsBar .bar {
@@ -164,7 +138,7 @@ div.info {
 }
 
 @keyframes showText {
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -177,7 +151,7 @@ div.info {
     border-radius: 8px;
     transform: scaleX(0);
     transform-origin: left;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .bar .progressLine span {
@@ -188,11 +162,11 @@ div.info {
     border-radius: 8px;
     transform: scaleX(0);
     transform-origin: left;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 @keyframes animate {
-    100%{
+    100% {
         transform: scaleX(1);
     }
 }
@@ -276,7 +250,7 @@ div.info {
 }
 
 @keyframes showText2 {
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -340,7 +314,7 @@ div.info {
 }
 
 .myWorkWeb-image {
-    height: 400px;
+    height: 450px;
     padding: 48px 0px 48px 0px;
 }
 
@@ -376,4 +350,495 @@ div.info {
 em {
     display: flex;
     justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/********************************************** Media Query 1500px **********************************************/
+
+@media (max-width:1500px) {
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #576F72;
+    }
+
+    section {
+        padding: 0px 48px 48px;
+    }
+
+    /* About Me */
+
+    .aboutMe {
+        padding: 178px 0px 0px 0px;
+    }
+
+    .heroImg {
+        max-height: 766px;
+        float: left;
+        margin-right: 70px;
+    }
+
+    .aboutMeContainer {
+        height: 766px;
+        background-color: #576F72;
+        padding: 100px 80px;
+
+    }
+
+    .aboutMeText {
+        text-align: left;
+        font-weight: 400;
+        font-size: 20px;
+        background-color: #576F72;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding: 24px;
+    }
+
+    .aboutMeIntro {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        background-color: #576F72;
+        color: #fff;
+    }
+
+
+
+
+    /* Skills */
+
+    .skillsBar {
+        width: 400px;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.2);
+    }
+
+    .hardSkillsHeader {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .softSkillsHeader {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .mySkillsContainer {
+        height: 550px;
+        padding: 0px 164px 180px 164px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 4px;
+    }
+
+    .hardSkillsContainer {
+        float: left;
+    }
+
+    .softSkillsContainer {
+        float: right;
+    }
+
+    div.info {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+    /* My Work */
+
+    .myWorkHeader {
+        text-align: center;
+        padding: 0px 0px 48px 0px;
+        font-size: 24px;
+    }
+
+    .myWorkWeb-image {
+        height: 425px;
+        padding: 48px 0px 48px 0px;
+    }
+
+    .myWorkMobile-image {
+        height: 500px;
+        padding: 48px 0px 48px 0px;
+    }
+}
+
+
+/********************************************** Media Query 1300px **********************************************/
+
+@media (max-width:1300px) {
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #576F72;
+    }
+
+    section {
+        padding: 0px 48px 48px;
+    }
+
+    /* About Me */
+
+    .aboutMe {
+        padding: 178px 0px 0px 0px;
+    }
+
+    .heroImg {
+        max-height: 766px;
+        float: left;
+        margin-right: 70px;
+    }
+
+    .aboutMeContainer {
+        height: 766px;
+        background-color: #576F72;
+        padding: 100px 80px;
+
+    }
+
+    .aboutMeText {
+        text-align: left;
+        font-weight: 400;
+        font-size: 18px;
+        background-color: #576F72;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding: 24px;
+    }
+
+    .aboutMeIntro {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        background-color: #576F72;
+        color: #fff;
+    }
+
+
+
+
+    /* Skills */
+
+    .skillsBar {
+        width: 300px;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba (0,0,0,0.2);
+    }
+
+    .hardSkillsHeader {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .softSkillsHeader {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .mySkillsContainer {
+        height: 550px;
+        padding: 0px 164px 180px 164px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 4px;
+    }
+
+    .hardSkillsContainer {
+        float: left;
+    }
+
+    .softSkillsContainer {
+        float: right;
+    }
+
+    div.info {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+    /* My Work */
+
+    .myWorkHeader {
+        text-align: center;
+        padding: 0px 0px 48px 0px;
+        font-size: 24px;
+    }
+
+    .myWorkWeb-image {
+        height: 375px;
+        padding: 48px 0px 48px 0px;
+    }
+
+    .myWorkMobile-image {
+        height: 450px;
+        padding: 48px 0px 48px 0px;
+    }
+}
+
+
+/********************************************** Media Query 1101px **********************************************/
+
+@media (max-width:1101px) {
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #576F72;
+    }
+
+    section {
+        padding: 0px 24px 48px;
+    }
+
+    /* About Me */
+
+    .aboutMe {
+        padding: 150px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+    .heroImg {
+        max-height: 1557px;
+        float: none;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .aboutMeContainer {
+        background-color: #576F72;
+        overflow: hidden;
+    }
+
+    .aboutMeText {
+        text-align: left;
+        font-weight: 400;
+        font-size: 20px;
+        background-color: #576F72;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding: 4px;
+    }
+
+    .aboutMeIntro {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        background-color: #576F72;
+        color: #fff;
+    }
+
+
+
+    /* Skills */
+
+    .mySkillsContainer {
+        height: auto;
+        padding: 0px 48px 48px 48px;
+        align-items: center;
+        box-shadow: 0px 0px 4px;
+        overflow: hidden;
+    }
+
+
+    .hardSkillsContainer {
+        float: none;
+    }
+
+    .softSkillsContainer {
+        float: none;
+    }
+
+    .skillsBar {
+        width: 98%;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.2);
+    }
+
+
+    /* My Work */
+
+    .myWorkHeader {
+        text-align: center;
+        padding: 0px 0px 24px 0px;
+        font-size: 24px;
+    }
+
+    .myWorkWeb-image {
+        height: auto;
+    }
+
+    .myWorkMobile-image {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .webImages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobileImages {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/********************************************** Media Query 800px **********************************************/
+
+@media (max-width:800px) {
+    
+    /* Navigation */
+    .nav-item {
+        padding: 0 24px;
+    }
+    
+    li,
+    a,
+    button {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        list-style-type: none;
+        text-decoration: none;
+        color: #7D9D9C;
+        display: inline-block;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 48px;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 0 4px 0;
+        z-index: 3;
+    }
+    
+    a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    a:hover {
+        transition: all;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #EFB448;
+    }
+    
+    .logo {
+        max-width: 80px;
+        vertical-align: middle;
+    }
+
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        color: #576F72;
+    }
+
+    section {
+        padding: 0px 24px 24px;
+    }
+
+    /* About Me */
+
+    .aboutMe {
+        padding: 150px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+    .heroImg {
+        max-height: 1557px;
+        float: none;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .aboutMeContainer {
+        background-color: #576F72;
+        overflow: hidden;
+    }
+
+    .aboutMeText {
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: #576F72;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding: 0px;
+    }
+
+    .aboutMeIntro {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        background-color: #576F72;
+        color: #fff;
+    }
+
+
+
+    /* Skills */
+
+    .mySkillsContainer {
+        height: auto;
+        padding: 0px 48px 48px 48px;
+        align-items: center;
+        box-shadow: 0px 0px 4px;
+        overflow: hidden;
+    }
+
+
+    .hardSkillsContainer {
+        float: none;
+    }
+
+    .softSkillsContainer {
+        float: none;
+    }
+
+    .skillsBar {
+        width: 98%;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.2);
+    }
+
+
+    /* My Work */
+
+    .myWorkHeader {
+        text-align: center;
+        padding: 0px 0px 24px 0px;
+        font-size: 24px;
+    }
+
+    .myWorkWeb-image {
+        height: auto;
+    }
+
+    .myWorkMobile-image {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .webImages {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobileImages {
+        display: flex;
+        justify-content: center;
+    }
 }

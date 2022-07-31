@@ -43,7 +43,8 @@
 
 
     <!-- Navigation bar -->
-    <header>
+    <!-- <header>
+    
         <a class="navbar-brand" href="#home"><img class="logo" src="images/logo_holmes.png" alt="Denis Liu"></a>
         <div>
             <ul class="navbar-nav list-group list-group-horizontal">
@@ -65,7 +66,35 @@
             </ul>
         </div>
 
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+        <a class="navbar-brand" href="#home"><img class="logo" src="images/logo_holmes.png" alt="Denis Liu"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mySkills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myWork">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+     </div>
+    </nav>
+
 
     <!-- About Me -->
     <section id="aboutMe">
@@ -234,7 +263,6 @@
                         <img class="myWorkMobile-image" src="images/cbc/mobile_homepage.gif" alt="">
                         <img class="myWorkMobile-image" src="images/cbc/mobile_location.gif" alt="">
                         <img class="myWorkMobile-image" src="images/cbc/mobile_radio2.gif" alt="">
-                        <img class="myWorkMobile-image" src="images/cbc/mobile_search.gif" alt="">
                     </div>
                     <em>CBC</em>
                 </div>
@@ -300,8 +328,9 @@
         <i class="social-icon fa-solid fa-envelope"></i>
         <p>© Copyright Denis Liu</p>
     </footer>
-
-    <script src="" async defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js" async defer></script>
 </body>
 
 </html>
